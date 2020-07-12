@@ -1,0 +1,28 @@
+module my{
+  namespace "http://example.net/turing-machine";
+
+  prefix "my";
+
+  description
+    "Data model for the Testing JSON generation.";
+
+  revision 2013-12-27 {
+    description
+      "Initial revision.";
+  }
+
+    container system {
+
+        list interface {
+            key "name";
+            description "List of interfaces in the system";
+            leaf name {
+                type string;
+            }
+            leaf address {
+                type string;
+            }
+        }
+    }
+
+}
